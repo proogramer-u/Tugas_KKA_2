@@ -28,8 +28,6 @@ memiliki jarak dalam kilometer, sehingga hubungan jalan berlaku dua arah.
     └── test_romania_search.py
 ```
 
-Folder `docs/` tidak disertakan dalam repository sesuai permintaan.
-
 ## Hasil Pencarian
 
 Program menjalankan pencarian dari `Arad` ke `Bucharest`.
@@ -69,9 +67,3 @@ UCS.
 python3 -m unittest discover -s "Uninformed Search" -p 'test_*.py'
 ```
 
-Pengujian memeriksa bahwa:
-
-- setiap algoritma dapat menemukan kota awal dan tujuan;
-- UCS menemukan total jarak minimum 418 km;
-- pencarian mengembalikan `(None, None)` jika tujuan tidak dapat dicapai;
-- setiap jalan memiliki hubungan balik karena graph bersifat tidak berarah.
